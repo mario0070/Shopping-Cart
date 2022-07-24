@@ -1,0 +1,596 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: lightblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: 1s;
+}
+
+
+.help{
+    display: none;
+}
+
+
+.acct{
+    display: none;
+    background-color: chocolate;
+    padding: 1em;
+    margin-right: 2em;
+    
+}
+
+#acct.valid{
+    display: block;
+    position: absolute;
+    margin-top: 1em;
+    width: 100px;
+    background-color: whitesmoke;
+    padding: 1em;
+    margin-right: 1em;
+    transition: 1s;
+    padding: 1em;
+    border-radius: .3em;
+    
+}
+
+#help.valid{
+    display: block;
+    position: absolute;
+    margin-top: 1em;
+    width: 130px;
+    background-color: whitesmoke;
+    padding: 1em;
+    margin-right: 1em;
+    transition: 1s;
+    padding: 1em;
+    border-radius: .3em;
+    
+}
+
+.help button{
+    background-color: tomato;
+    padding: .3em;
+}
+
+.acct button{
+    background-color: tomato;
+    padding: .3em;
+}
+
+
+
+nav{
+    display: flex;
+    background-color:none;
+    padding: .6em;
+    justify-content: space-around;
+    transition: 1s;
+    
+}
+
+input{
+    width: 50%;
+
+}
+
+.input{
+    margin-left: 17em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+
+.input input,.input button{
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.first-prod{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+ol{
+    background-color: azure;
+    padding: 1em;
+    width: 150%;
+    border-radius: 1em;
+    transition: 1s;
+    
+}
+
+img{
+    border-radius: 1em;
+}
+
+li{
+    list-style: none;
+    padding: .2em;
+}
+
+li:hover{
+    background-color: tomato;
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+
+.sec-prod{
+    display: flex;
+    padding: .4em;
+    margin-top: 0em;
+    background-color: azure;
+}
+
+.prod-container img{
+    width: 100px;
+    height: 100px;
+    margin-left: 2.2em;
+    margin-right: 2.2em;
+    margin-bottom: 0px;
+    
+}
+
+.prod-container:hover,
+.prod-container:active,
+.prod-container:focus{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.prod-container{
+    transition: .5s;
+}
+
+.prod-container span{
+    text-align: center;
+    display: block;
+    
+}
+
+.m1{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid black;
+    padding-top: 1.5em;
+}
+
+.prod-btn button{
+    background-color: aquamarine;
+    float: right;
+    margin-top: 0;
+    padding: .5em;
+    border-radius: .4em;
+    
+}
+
+button:hover{
+    background-color: whitesmoke;
+    transition: .5s;
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: .3em .3em .2em black;
+}
+
+button:active{
+    background-color: whitesmoke;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: translateY(5px);
+    box-shadow: 0em 0em 0em;
+}
+
+button{
+    transition: 1s;
+}
+
+.prod-name{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.p-btn{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+h3{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    transform: translateX(1000px);
+    transition: 3s ease-in-out;
+ 
+}
+
+.that{
+    text-align: center;
+    transition: 3s ease-in-out;
+    transform:translateX(0px) ;
+}
+
+#cart{
+    margin-top: 5em;
+    font-size: 2em;
+    transition: 1s;
+}
+
+.prod-1:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.prod-1{
+    transition: .5s;
+}
+
+.function{
+    display: flex;
+    justify-content: space-around;
+}
+
+.function span{
+    border-bottom: 2px solid black;
+    margin-bottom: 1em;
+    padding-bottom: .5em;
+}
+
+.item,.quantity{
+    width: 200px;
+}
+
+.price{
+    width: 100px;
+}
+
+
+.up{
+    background-color: whitesmoke;
+    /* float: right; */
+    font-size: 5em;
+    margin-right: .2em;
+    border-radius: .5em;
+}
+
+.btn-red{
+    background-color: red;
+    padding: .3em;
+    border-radius: .3em;
+}
+
+.marg,.marg{
+    padding-top: 2em;
+}
+
+
+
+.total{
+    float: right;
+    background-color: tomato;
+    margin-right: 5em;
+    padding: .5em;
+    border-radius: .5em;
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+span:hover{
+    cursor: pointer;
+}
+
+.prod-1 img{
+    height: 200px;
+}
+
+
+.pcs{
+    margin-left: 18em;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 1em;
+    width: 30%;
+    margin-top: 4em;
+    font-weight: 900;
+    font-size: 1.5em;
+    background-color: aquamarine;
+    
+}
+
+.maq{
+    padding: 1em;
+    margin-top: 1em;
+    letter-spacing: .1em;
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#whatsap{
+    position: fixed;
+}
+
+
+.product-list{
+    transition: 3s;
+    transform: translateY(-700px);
+}
+
+
+
+
+.this{
+    transform:  translateY(0px);
+    transition: 2s;
+}
+
+.them{
+    transform: translateY(400px) translateX(1090px) rotate(360deg);
+    transition: 3s;
+}
+
+.prod-img {
+    transition: 3s;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    width: 100%;
+    background-color: azure;
+    padding: 1em;
+}
+
+#que{
+    margin-top: 2em;
+}
+
+#dark button{
+    background-color: black;
+    color: azure;
+    padding: .2em;
+    border-radius: .4em;
+}
+
+
+#body.valid{
+    background-color: rgb(79, 71, 71);
+    color: whitesmoke;
+}
+
+#nav.valid{
+    background-color: black;
+    color: whitesmoke;
+    transition: 1s;
+}
+
+#que.valid{
+    background-color: black;
+    color: whitesmoke;
+    transition: 1s;
+}
+
+#ques.valid{
+    background-color: black;
+    color: whitesmoke;
+    transition: 1s;
+}
+
+#prodi.valid{
+    background-color: black;
+    color: whitesmoke;
+    transition: 1s;
+}
+
+#carts.valid{
+    color: whitesmoke;
+    transition: 1s;
+}
+
+#darks.valid{
+    background-color: whitesmoke;
+    transition: 1s;
+    color: black;
+}
+
+#sec-prod.valid{
+    background-color: black;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (max-width:700px) {
+    /* body{
+        background-color: tomato;
+    } */
+
+    #cat{
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+
+    .prod-1 img{
+        height: 80px;
+    }
+
+    .prod-1{
+        margin-left: 1em;
+    }
+    
+
+    .prod-name{
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .prod-btn button{
+        padding: 0;
+        text-transform: lowercase;
+        font-size: 1em;
+        margin-right: 25px;
+    }
+
+    .p-btn{
+        display: block;
+    }
+
+    .first-prod{
+        display: block;
+        justify-content: space-around;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 5em;
+        
+    }
+
+    .product-list{
+        margin-bottom: 1em;
+        width: 50%;
+        margin-top: 0;
+    }
+
+    .prod-img img{
+        width: 250px;
+        height: 200px;
+        display: none;
+    }
+
+    nav{
+        display: block;
+        width: 100%;
+
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    nav input{
+        margin-left: 4em;
+        margin-bottom: .9em;
+        margin-top: .6em;
+    }
+
+    nav button{
+        margin-left: 1em;
+    }
+
+    
+
+   #dark{
+    display: block;
+    position: fixed;
+    margin-top: -6em;
+    margin-left: -2em;
+   }
+
+    .my-acct{
+        margin-left: 5em;
+        margin-top: 1em;
+    }
+
+    .helps, .cart{
+        margin-left: 1em;
+        margin-right: 1em;
+        text-align: left;
+        display: inline;
+        /* margin-top: 3em; */
+    }
+
+    .sec-prod{
+        overflow: scroll;
+        width: 100%;
+        margin-left: 0em;
+    }
+  
+    marquee,.m1,.function{
+        width: 100%;
+    }
+
+    #que{
+        margin-top: 6em;
+        margin-bottom: 0;
+    }
+
+    .function{
+        margin-left: 1em;
+        padding-right: 3em;
+    }
+
+    .purchase1{
+        width: 100%;
+        margin-right: 10em;
+        /* padding-right: 3em; */
+    }
+
+    .item img{
+        height: 10px;
+    }
+ 
+    .pcs{
+        margin-left: 2em;
+        width: 70%;
+        padding: .5em;
+    }
+    
+    .sticky{
+        position: absolute;
+        top: 0;
+        margin-top: 0;
+        width: 100%;
+        background-color: azure;
+        padding: 1em;
+    }
+   
+    .item{
+        width: 100px;
+    }
+
+    .quantity{
+        width: 50px;
+    }
+    
+    .price{
+        width: 50px;
+    }
+    
+}
